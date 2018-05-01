@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+    NSTimer *timer;
+    int countInt;
+    
+    NSTimer *timerScore;
+    int scoreInt;
+    
+}
+@property (weak, nonatomic) IBOutlet UILabel *getReadyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
+- (IBAction)StartStop:(id)sender;
 
 
 @end
